@@ -1,0 +1,25 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+#.settings
+
+**/.project
+
+**/target
+**/.classpath
+**/dist
+**/output
+**/tmp
+**/node_modules
+**/.settings
+**/out-tsc
+**/.idea
+**/.project
+**/.c9
+**/*.sublime-workspace
+**/package-lock.json
+**/.sass-cache
+**/*.lock
+**/coverage
+**/*.log
+**/typings
+**/.factorypath

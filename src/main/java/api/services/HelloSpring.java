@@ -23,5 +23,12 @@ public class HelloSpring {
     public ResponseEntity<Pong> ping() {
         return new ResponseEntity<Pong>(new Pong("Ping received in server!"), HttpStatus.OK);
     }
+	
+	@RequestMapping(value = "/boleto", method = RequestMethod.GET)
+	@ResponseBody
+	public ResponseEntity<Pong> boleto() {
+		BoletoService.gerar();
+		return new ResponseEntity<Pong>(new Pong("Boleto gerado com sucesso!"), HttpStatus.OK);
+	}
 
 }
